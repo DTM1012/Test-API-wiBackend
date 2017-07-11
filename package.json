@@ -1,0 +1,20 @@
+{
+  "name": "test-wi-backend",
+  "version": "0.0.1",
+  "dependencies": {
+    "chai": "^4.0.2",
+    "fs": "0.0.1-security",
+    "gulp": "^3.9.1",
+    "gulp-dest": "^0.2.3",
+    "gulp-mocha": "^4.3.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-util": "^3.0.8",
+    "mocha": "^3.4.2",
+    "path": "^0.12.7",
+    "stringify-object": "^3.2.0",
+    "superagent": "^3.5.2",
+    "test-generator": "^1.0.8",
+    "xlsx": "^0.10.6",
+    "xlsx-to-json": "^0.3.0"
+  }
+}

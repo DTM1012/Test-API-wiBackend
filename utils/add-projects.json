@@ -1,0 +1,20 @@
+[
+	{
+  	  "name": "Project-1",
+	  "company": "VNU",
+	  "department": "UET-FIT",
+	  "description": "blablabla"
+	},
+	{
+	  "name": "Project-2",
+	  "company": "VNU",
+	  "department": "UET-FIT",
+	  "description": "This is description"
+	},
+	{
+	  "name": "Project-3",
+	  "company": "Well-Insight",
+	  "department": "",
+	  "description": "This is description of Well-Insight"
+	}		
+]
