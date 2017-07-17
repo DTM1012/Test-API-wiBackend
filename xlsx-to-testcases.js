@@ -1,10 +1,11 @@
+'use strict';
 var testGenerator = require('test-generator').testGenerator;
 const XLSX = require('xlsx');
 const fs = require('fs');
 var stringifyObj = require('stringify-object');
 
-XLSXFile = 'test-wi-backend-2.xlsx';
-TestCaseFile = 'testcases.js';
+var XLSXFile = 'test-wi-backend-final.xlsx';
+var TestCaseFile = 'testcases.js';
 
 let sheetName = 'Test_plan';
 
