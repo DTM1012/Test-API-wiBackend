@@ -3,9 +3,7 @@ Project
 
 ### Generate projects:
 
-	```
-		node generate-projects.js add-project.json 100
-	```
+	**node generate-projects.js add-project.json 100**
 
 	* add-project.json : output file
 
@@ -14,27 +12,21 @@ Project
 
 ### new projects:
 
-	```
-		mocha new-projects.js add-project.json
-	```
+	**mocha new-projects.js add-project.json**
 
 	add-project.json : input file
 
 
 ### list projects:
 
-	 ```
-	 	mocha list-projects.js projects.json
-	 ```
+	 **mocha list-projects.js projects.json**
 
 	projects.json : output file
 
 
 ### delete all projects:
 
-	```
-		mocha delete-all-projects.js projects.json
-	```
+	**mocha delete-all-projects.js projects.json**
 
 	projects.json : input file (list projects)
 
