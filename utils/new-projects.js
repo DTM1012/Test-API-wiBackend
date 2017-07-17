@@ -1,3 +1,4 @@
+'use strict';
 var chai = require('chai');
 var expect = chai.expect;
 var assert = chai.assert;
@@ -13,13 +14,13 @@ var projects = JSON.parse(content.toString()) ;
 
 for(var i = 0; i < projects.length; i++) {
     let project = projects[i];
-    describe('POST: "http://54.169.109.34/project/new" API', function() {
+    describe('POST: "http://localhost:3000/project/new" API', function() {
 
     let response;
     let body;
     before((done)=>{
         request
-        .post("http://54.169.109.34/project/new").send(project)
+        .post("http://localhost:3000/project/new").send(project)
         .end(function(err, res){
             response = res;
             body = res.body;
