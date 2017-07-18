@@ -4,7 +4,7 @@ const XLSX = require('xlsx');
 const fs = require('fs');
 var stringifyObj = require('stringify-object');
 
-var XLSXFile = 'test-wi-backend-final.xlsx';
+var XLSXFile = 'test-wi-backend-2.xlsx';
 var TestCaseFile = 'testcases.js';
 
 let sheetName = 'Test_plan';

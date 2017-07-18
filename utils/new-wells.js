@@ -15,13 +15,13 @@ var wells = JSON.parse(content.toString());
 
 for (var i = 0; i < wells.length; i++) {
     let well = wells[i];
-    describe('POST: "http://54.169.109.34/project/well/new" API', function() {
+    describe('POST: "http://localhost:3000/project/well/new" API', function() {
 
     let response;
     let body;
     before((done)=>{
         request
-        .post("http://54.169.109.34/project/well/new").send(well)
+        .post("http://localhost:3000/project/well/new").send(well)
         .end(function(err, res){
             response = res;
             body = res.body;

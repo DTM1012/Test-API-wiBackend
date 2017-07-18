@@ -3,3 +3,4 @@ node_modules
 finalCases
 testcases
 ~$*.xlsx
+utils/*.json

@@ -1,10 +1,13 @@
 'use strict';
 var chai = require('chai');
 var expect = chai.expect;
-var assert = chai.assert;
 var request = require('superagent').agent();
 var token = null;
 var key = null;
+
+var url = require('../config');
+var baseURL = url.baseURL;
+
 var infile = process.argv[3];
 var fs = require('fs');
 var content = fs.readFileSync(infile);

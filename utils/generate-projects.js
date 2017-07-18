@@ -16,7 +16,7 @@ fs.exists(outfile, function(exists) {
 					description : "description"
 				}
 			]
-		for(var i = 0; i < number;i++) {
+		for(var i = 0; i < number; i++) {
 			var nameVal = "project" + i;
 			var companyVal = "company" + i;
 			var departmentVal = "Department " + i;
@@ -30,7 +30,7 @@ fs.exists(outfile, function(exists) {
 			};
 			
 		}
-		json = JSON.stringify(data, null,4);
+		let json = JSON.stringify(data, null,4);
 		fs.writeFileSync(outfile,json);
 	}
 });

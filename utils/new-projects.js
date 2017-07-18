@@ -7,6 +7,10 @@ var token = null;
 var key = null;
 var infile = process.argv[3];
 var fs = require('fs');
+
+var url = require('../config');
+var baseURL = url.baseURL;
+
 var content = fs.readFileSync(infile);
 var stringifyObj = require('stringify-object');
 
@@ -14,22 +18,22 @@ var projects = JSON.parse(content.toString()) ;
 
 for(var i = 0; i < projects.length; i++) {
     let project = projects[i];
-    describe('POST: "http://localhost:3000/project/new" API', function() {
+    describe('POST: "'+ baseURL + 'project/new" API', function() {
 
-    let response;
-    let body;
-    before((done)=>{
-        request
-        .post("http://localhost:3000/project/new").send(project)
-        .end(function(err, res){
-            response = res;
-            body = res.body;
-            done();
+        let response;
+        let body;
+        before((done)=>{
+            request
+            .post(baseURL + "project/new").send(project)
+            .end(function(err, res){
+                response = res;
+                body = res.body;
+                done();
+            })
         })
-    })
-    
-    it('Add new projects', () => {
-        expect(response.statusCode).to.equal(200)
-    })
-});
+        
+        it('Add new projects', () => {
+            expect(response.statusCode).to.equal(200)
+        })
+    });
 }
