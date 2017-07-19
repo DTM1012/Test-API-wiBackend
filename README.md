@@ -1,32 +1,64 @@
-Project
-----------
+# Test-wi-backend
+
+Prerequisites: install **mocha**
+[Mocha](https://mochajs.org/)
+
+>utils:
+
+## Projects
 
 ### Generate projects:
 
-	**node generate-projects.js add-project.json 100**
+```
+node generate-projects.js projects.json 100
+```
 
-	* add-project.json : output file
+* projects.json : output file 
+* 100 : number projects expected generate
 
-	* 100: number projects 
+### New projects
 
+```
+mocha new-projects.js projects.json
+```
 
-### new projects:
+* projects.json : input file (use output file from _Generate projects_)
 
-	**mocha new-projects.js add-project.json**
+### List all projects
+```
+mocha list-projects.js list-projects.json
+```
 
-	add-project.json : input file
+* list-projects.json : output file 
 
+### Delete all projects 
+```
+mocha delete-all-projects.js list-projects.json 
+```
 
-### list projects:
+* list-projects.json : input file (use output file from _List all projects_)
 
-	 **mocha list-projects.js projects.json**
+## Wells
 
-	projects.json : output file
+### New wells
 
+```
+mocha new-wells.js wells.json
+```
 
-### delete all projects:
+* wells.json : input file 
 
-	**mocha delete-all-projects.js projects.json**
+### List all wells
+```
+mocha list-wells.js list-projects.json list-wells.json
+```
 
-	projects.json : input file (list projects)
+* list-projects.json : input file (use output file from _List all projects_)
+* list-wells.json : output file
 
+### Delete all wells 
+```
+mocha delete-all-wells.js list-wells.json 
+```
+
+* list-wells.json : input file (use output file from _List all wells_)
